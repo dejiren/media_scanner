@@ -48,8 +48,7 @@ class MediaScannerPlugin : FlutterPlugin, MethodCallHandler {
             if (android.os.Build.VERSION.SDK_INT < 29) {
                 context.sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(file)))
             } else {
-                MediaScannerConnection.scanFile(context, arrayOf(file.toString()),
-                        arrayOf(file.name), null)
+                MediaScannerConnection.scanFile(context, arrayOf(file.toString()), null, null)
             }
             Log.d("Media Scanner", "Success show image $path in Gallery")
             "Success show image $path in Gallery"
