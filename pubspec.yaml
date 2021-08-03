@@ -28,7 +28,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.codexlogs.media_scanner
+        package: com.github.freeonterminate.media_scanner
         pluginClass: MediaScannerPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
